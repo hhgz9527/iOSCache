@@ -38,7 +38,7 @@ typedef enum : NSUInteger {
 
 
 /**
- *  Save content to Text
+ *  Save txt to folder
  *
  *  @param path     save path
  *  @param content  support NSArray,NSDictionary...
