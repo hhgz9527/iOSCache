@@ -14,7 +14,7 @@
 		<string>https://github.com/hhgz9527/iOSCache.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOSCache/iOSCache.xcodeproj</string>
+	<string>iOSCache Example/iOSCache.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>FA57A377444C807707DB11CC402A2F9B9A9E1623</key>
