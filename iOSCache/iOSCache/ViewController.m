@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MSSandBoxCache.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    MSSandBoxCache *cache = [[MSSandBoxCache alloc] init];
+    
+    //create folder
+    NSString *filePath = [cache createFolderWithDirectory:NSLibraryDirectory folderName:@"test"];
+    //use terminal, open filePath
+    NSLog(@"%@",filePath);
+
+    //save image to folder
+    [cache saveImageToFolderPath:filePath image:[UIImage imageNamed:@"xcode"] imageName:@"xcode"];
+    
+    //save text(or NSArray,NSDictionary...) to folder
+    [cache saveTextTOFolderPath:filePath content:@"test" textName:@"text"];
 }
 
 - (void)didReceiveMemoryWarning {

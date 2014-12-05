@@ -14,6 +14,8 @@
 		737887E71A3172F70072CEEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737887E61A3172F70072CEEC /* Images.xcassets */; };
 		737887EA1A3172F70072CEEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737887E81A3172F70072CEEC /* LaunchScreen.xib */; };
 		737887F61A3172F70072CEEC /* iOSCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737887F51A3172F70072CEEC /* iOSCacheTests.m */; };
+		7379297B1A322864004FDDAF /* MSSandBoxCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7379297A1A322864004FDDAF /* MSSandBoxCache.m */; };
+		7379297D1A32345A004FDDAF /* xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379297C1A32345A004FDDAF /* xcode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		737887EF1A3172F70072CEEC /* iOSCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		737887F41A3172F70072CEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		737887F51A3172F70072CEEC /* iOSCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSCacheTests.m; sourceTree = "<group>"; };
+		737929791A322864004FDDAF /* MSSandBoxCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSandBoxCache.h; sourceTree = "<group>"; };
+		7379297A1A322864004FDDAF /* MSSandBoxCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSandBoxCache.m; sourceTree = "<group>"; };
+		7379297C1A32345A004FDDAF /* xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		737887D81A3172F70072CEEC /* iOSCache */ = {
 			isa = PBXGroup;
 			children = (
+				7379297C1A32345A004FDDAF /* xcode.png */,
 				737887FF1A3173030072CEEC /* Classes */,
 				737887DD1A3172F70072CEEC /* AppDelegate.h */,
 				737887DE1A3172F70072CEEC /* AppDelegate.m */,
@@ -123,6 +129,8 @@
 		737887FF1A3173030072CEEC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				737929791A322864004FDDAF /* MSSandBoxCache.h */,
+				7379297A1A322864004FDDAF /* MSSandBoxCache.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 				737887E51A3172F70072CEEC /* Main.storyboard in Resources */,
 				737887EA1A3172F70072CEEC /* LaunchScreen.xib in Resources */,
 				737887E71A3172F70072CEEC /* Images.xcassets in Resources */,
+				7379297D1A32345A004FDDAF /* xcode.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +238,7 @@
 			files = (
 				737887E21A3172F70072CEEC /* ViewController.m in Sources */,
 				737887DF1A3172F70072CEEC /* AppDelegate.m in Sources */,
+				7379297B1A322864004FDDAF /* MSSandBoxCache.m in Sources */,
 				737887DC1A3172F70072CEEC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +432,7 @@
 				737887FB1A3172F70072CEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		737887FC1A3172F70072CEEC /* Build configuration list for PBXNativeTarget "iOSCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +441,7 @@
 				737887FE1A3172F70072CEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
