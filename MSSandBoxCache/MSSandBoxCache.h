@@ -41,7 +41,7 @@ typedef enum : NSUInteger {
  *  Save txt to folder
  *
  *  @param path     save path
- *  @param content  support NSArray,NSDictionary...
+ *  @param content  support NSArray,NSDictionary
  *  @param textName file name
  */
 -(void)saveTextTOFolderPath:(NSString *)path content:(id)content textName:(NSString *)textName;

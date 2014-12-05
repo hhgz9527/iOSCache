@@ -29,7 +29,7 @@
     //save image to folder
     [cache saveImageToFolderPath:filePath image:[UIImage imageNamed:@"xcode"] imageName:@"xcode"];
     
-    //save text(or NSArray,NSDictionary...) to folder
+    //save text(or NSArray,NSDictionary) to folder
     [cache saveTextTOFolderPath:filePath content:@"use termainal open folder path" textName:@"text"];
     
     //get text
