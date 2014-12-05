@@ -30,7 +30,12 @@
     [cache saveImageToFolderPath:filePath image:[UIImage imageNamed:@"xcode"] imageName:@"xcode"];
     
     //save text(or NSArray,NSDictionary...) to folder
-    [cache saveTextTOFolderPath:filePath content:@"test" textName:@"text"];
+    [cache saveTextTOFolderPath:filePath content:@"use termainal open folder path" textName:@"text"];
+    
+    //get text
+    NSString *filePath2 = [filePath stringByAppendingPathComponent:@"text.txt"];
+    NSString *textContent = [[NSString alloc] initWithContentsOfFile:filePath2 encoding:NSUTF8StringEncoding error:nil];
+    NSLog(@"%@",textContent);
 }
 
 - (void)didReceiveMemoryWarning {
