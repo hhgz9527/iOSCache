@@ -33,4 +33,9 @@
     NSString *filePath = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.txt",textName]];
     [content writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
+
+-(NSArray *)forinFolder:(NSString *)folderPath{
+    NSArray *fileList = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:folderPath error:nil];
+    return fileList;
+}
 @end

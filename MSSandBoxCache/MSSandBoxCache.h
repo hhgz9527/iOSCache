@@ -47,4 +47,12 @@ typedef enum : NSUInteger {
 -(void)saveTextTOFolderPath:(NSString *)path content:(id)content textName:(NSString *)textName;
 
 
+/**
+ *  Browse all file
+ *
+ *  @param folderPath path
+ *
+ *  @return file array
+ */
+-(NSArray *)forinFolder:(NSString *)folderPath;
 @end
