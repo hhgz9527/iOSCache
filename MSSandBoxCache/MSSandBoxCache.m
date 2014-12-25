@@ -38,4 +38,14 @@
     NSArray *fileList = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:folderPath error:nil];
     return fileList;
 }
+
+-(void)saveDictionaryConvertJson:(NSDictionary *)dictionary toFolder:(NSString *)folderPath textName:(NSString *)textName{
+    if ([NSJSONSerialization isValidJSONObject:dictionary]) {
+        NSData *data = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:nil];
+        NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [self saveTextTOFolderPath:folderPath content:json textName:textName];
+    }else{
+        NSLog(@"dictionary is not json farmot");
+    }
+}
 @end

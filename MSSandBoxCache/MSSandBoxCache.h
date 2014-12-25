@@ -55,4 +55,13 @@ typedef enum : NSUInteger {
  *  @return file array
  */
 -(NSArray *)forinFolder:(NSString *)folderPath;
+
+
+/**
+ *  NSDictionary to Json
+ *
+ *  @param dictionary NSDictionary
+ */
+-(void)saveDictionaryConvertJson:(NSDictionary *)dictionary toFolder:(NSString *)folderPath textName:(NSString *)textName;
+
 @end
