@@ -48,4 +48,11 @@
         NSLog(@"dictionary is not json farmot");
     }
 }
+
+-(NSDictionary *)getJsonData:(NSSearchPathDirectory)directory withFolderName:(NSString *)foldername withTextName:(NSString *)textName{
+    NSString *path = [self createFolderWithDirectory:directory folderName:foldername];
+    NSData *data = [NSData dataWithContentsOfFile:[path stringByAppendingString:[NSString stringWithFormat:@"/%@.txt",textName]]];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    return dic;
+}
 @end

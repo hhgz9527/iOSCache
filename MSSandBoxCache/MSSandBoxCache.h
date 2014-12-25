@@ -64,4 +64,16 @@ typedef enum : NSUInteger {
  */
 -(void)saveDictionaryConvertJson:(NSDictionary *)dictionary toFolder:(NSString *)folderPath textName:(NSString *)textName;
 
+
+/**
+ *  return json
+ *
+ *  @param directory  folder directory
+ *  @param foldername folder name
+ *  @param textName save json's txt file name
+ *
+ *  @return json to dictionary
+ */
+-(NSDictionary *)getJsonData:(NSSearchPathDirectory)directory withFolderName:(NSString *)foldername withTextName:(NSString *)textName;
+
 @end
